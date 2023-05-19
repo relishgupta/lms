@@ -3,7 +3,8 @@ import { useState } from "react";
 const RemoveEmp = () => {
   const [name, setName] = useState('');
 
-  const removed=(()=>{
+  const removed=((e)=>{
+    e.preventDefault();
     if(name!==""){
       let result=window.confirm(`Are you sure you want to delete ${name} from the system`);
       if(result){
