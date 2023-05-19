@@ -3,7 +3,8 @@ import { useState } from "react";
 const AddEmp = () => {
   const [name, setName] = useState('');
 
-  const added=(()=>{
+  const added=((e)=>{
+    e.preventDefault();
     if(name!==""){
       alert(`Successfully added : ${name}`)
     }
