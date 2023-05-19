@@ -22,7 +22,7 @@ const AddEmp = () => {
             ADD EMPLOYEE
           </h1>
             <span className="border-b"></span>
-        <form action="https://getform.io/f/cc72a437-e99e-4735-adb2-74f9a4ba4aaf" method="post" className="p-2 xl:w-64 mx-auto">
+        <form action="" className="p-2 xl:w-64 mx-auto">
           <div className="mt-8 flex flex-col">
             <input type="text" onChange={handleInputChange} name="name" value={name} placeholder="Enter name" required className="class w-full border-b border-black focus:placeholder-transparent text-black focus:outline-none bg-transparent bg-opacity-90 placeholder-white opacity-80 -webkit-autofill" />
             <br/>
@@ -33,7 +33,6 @@ const AddEmp = () => {
           <button onClick={added} className="flex mx-auto w-24 xl:w-36 mt-5 xl:mt-16 p-1 text-lg px-6 xl:px-12 rounded-full border-2 border-none bg-gradient-to-r from-green-400 to-blue-500 hover:scale-125 duration-150">
             Done
           </button>
-
         </form>
       </div>
     </section>
